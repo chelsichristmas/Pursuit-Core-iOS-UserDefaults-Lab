@@ -12,11 +12,11 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="UserDefaults_Lab" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mtH-ZS-PG5">
-                                <rect key="frame" x="110.5" y="449" width="193" height="34"/>
+                                <rect key="frame" x="110.5" y="417" width="193" height="34"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="193" id="1xi-4r-4ZK"/>
                                 </constraints>
@@ -24,31 +24,31 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Horoscope_circle" translatesAutoresizingMaskIntoConstraints="NO" id="bwj-Na-ysV">
-                                <rect key="frame" x="82" y="128" width="250" height="250"/>
+                                <rect key="frame" x="82" y="96" width="250" height="250"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="250" id="5T4-fC-Pvk"/>
                                     <constraint firstAttribute="height" constant="250" id="5jC-Cq-1Jz"/>
                                 </constraints>
                             </imageView>
                             <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3ND-Ah-xq1">
-                                <rect key="frame" x="47" y="508" width="320" height="216"/>
+                                <rect key="frame" x="47" y="476" width="320" height="216"/>
                             </pickerView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select Astrological Sign" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GLH-6C-F9d">
-                                <rect key="frame" x="109.5" y="498" width="195" height="21"/>
+                                <rect key="frame" x="109.5" y="466" width="195" height="21"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3He-9d-dvl">
-                                <rect key="frame" x="191" y="739" width="32" height="30"/>
+                                <rect key="frame" x="191" y="707" width="32" height="30"/>
                                 <state key="normal" title="Next"/>
                                 <connections>
-                                    <action selector="next:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nnb-XS-2MY"/>
+                                    <action selector="next:" destination="BYZ-38-t0r" eventType="touchUpInside" id="VeD-ng-DFw"/>
                                     <segue destination="PGH-oT-Zv6" kind="show" id="pkx-im-C33"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter name:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="abV-sD-XvW">
-                                <rect key="frame" x="161" y="408" width="92" height="21"/>
+                                <rect key="frame" x="161" y="376" width="92" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -80,33 +80,48 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1047.8260869565217" y="117.85714285714285"/>
+            <point key="canvasLocation" x="1957.9710144927537" y="117.85714285714285"/>
         </scene>
         <!--Detail View Controller-->
         <scene sceneID="qZE-W1-9oH">
             <objects>
                 <viewController id="PGH-oT-Zv6" customClass="DetailViewController" customModule="UserDefaults_Lab" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="dgf-qM-SlK">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name of Sign" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F4V-GT-k7u">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Name of Sign" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F4V-GT-k7u">
                                 <rect key="frame" x="105" y="108" width="204" height="39.5"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="33"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="aYt-b0-TB2">
-                                <rect key="frame" x="105" y="466" width="253" height="152"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Horoscope: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v1W-dw-z8N">
+                                <rect key="frame" x="20" y="508.5" width="94" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
-                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Horosco" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v1W-dw-z8N">
-                                <rect key="frame" x="34" y="482" width="65" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Hello \(name). Your horoscope for the day can be found below" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O19-o1-E5f">
+                                <rect key="frame" x="20" y="447.5" width="374" height="41"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ulD-mu-3ev">
+                                <rect key="frame" x="130" y="832" width="136" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Reset User Settings"/>
+                                <connections>
+                                    <action selector="reset:" destination="PGH-oT-Zv6" eventType="touchUpInside" id="Ovi-ni-G8R"/>
+                                    <segue destination="j17-X3-dtH" kind="show" id="4od-ZO-29Z"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y3b-8Y-H3k">
+                                <rect key="frame" x="122" y="508.5" width="260" height="20.5"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -114,21 +129,19 @@
                             </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <constraints>
-                            <constraint firstItem="F4V-GT-k7u" firstAttribute="top" secondItem="4Ji-U5-vl1" secondAttribute="top" constant="20" id="OfN-Fl-b1Z"/>
-                            <constraint firstItem="F4V-GT-k7u" firstAttribute="centerX" secondItem="dgf-qM-SlK" secondAttribute="centerX" id="VTs-WH-tcM"/>
-                        </constraints>
                         <viewLayoutGuide key="safeArea" id="4Ji-U5-vl1"/>
                     </view>
                     <navigationItem key="navigationItem" id="vDM-U3-Jcd"/>
                     <connections>
-                        <outlet property="horoscopeTextView" destination="aYt-b0-TB2" id="W1o-QU-5gN"/>
+                        <outlet property="greetingLabel" destination="O19-o1-E5f" id="fj6-Rv-891"/>
+                        <outlet property="horoscopeLabel" destination="Y3b-8Y-H3k" id="WLD-3Q-gKq"/>
+                        <outlet property="resetButton" destination="ulD-mu-3ev" id="SXg-Cp-p3Q"/>
                         <outlet property="signLabel" destination="F4V-GT-k7u" id="NTA-Jl-Ilq"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zIG-Aj-xR2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1855.072463768116" y="117.85714285714285"/>
+            <point key="canvasLocation" x="2797" y="118"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="79v-Ts-z3d">
@@ -141,15 +154,38 @@
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="x5q-PL-PLC"/>
+                        <segue destination="j17-X3-dtH" kind="relationship" relationship="rootViewController" id="x5q-PL-PLC"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="X7B-2Y-dtt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="137.68115942028987" y="117.85714285714285"/>
         </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="NXV-dF-83F">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="j17-X3-dtH" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="jMI-65-ew6"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="2F2-WD-Y9K">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="Wpf-IE-d74"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Bj8-wN-Ok1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1047.8260869565217" y="117.85714285714285"/>
+        </scene>
     </scenes>
     <resources>
         <image name="Horoscope_circle" width="990" height="994"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="pkx-im-C33"/>
+        <segue reference="4od-ZO-29Z"/>
+    </inferredMetricsTieBreakers>
 </document>

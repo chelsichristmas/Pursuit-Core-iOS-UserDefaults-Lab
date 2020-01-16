@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		6B24E81623CD21E700DC097D /* UserEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B24E81523CD21E700DC097D /* UserEntry.swift */; };
+		6B4AC5C923CE765A003FDC4C /* UserPreferences.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B4AC5C823CE765A003FDC4C /* UserPreferences.swift */; };
 		6BB0A60923CD0089004709ED /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BB0A60823CD0089004709ED /* AppDelegate.swift */; };
 		6BB0A60B23CD0089004709ED /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BB0A60A23CD0089004709ED /* SceneDelegate.swift */; };
 		6BB0A60D23CD0089004709ED /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BB0A60C23CD0089004709ED /* ViewController.swift */; };
@@ -23,6 +24,7 @@
 
 /* Begin PBXFileReference section */
 		6B24E81523CD21E700DC097D /* UserEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserEntry.swift; sourceTree = "<group>"; };
+		6B4AC5C823CE765A003FDC4C /* UserPreferences.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserPreferences.swift; sourceTree = "<group>"; };
 		6BB0A60523CD0089004709ED /* UserDefaults-Lab.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "UserDefaults-Lab.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6BB0A60823CD0089004709ED /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6BB0A60A23CD0089004709ED /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -96,6 +98,7 @@
 			children = (
 				6BB0A62423CD03CF004709ED /* Horoscopes.swift */,
 				6B24E81523CD21E700DC097D /* UserEntry.swift */,
+				6B4AC5C823CE765A003FDC4C /* UserPreferences.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -185,6 +188,7 @@
 				6BB0A62223CD039B004709ED /* HoroscopeAPIClient.swift in Sources */,
 				6BB0A62023CD0385004709ED /* AppError.swift in Sources */,
 				6BB0A62523CD03CF004709ED /* Horoscopes.swift in Sources */,
+				6B4AC5C923CE765A003FDC4C /* UserPreferences.swift in Sources */,
 				6BB0A60923CD0089004709ED /* AppDelegate.swift in Sources */,
 				6B24E81623CD21E700DC097D /* UserEntry.swift in Sources */,
 				6BB0A60B23CD0089004709ED /* SceneDelegate.swift in Sources */,
